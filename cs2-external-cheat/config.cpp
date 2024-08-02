@@ -33,13 +33,13 @@ bool Config::createConfigFolder() {
         return true;
     }
     else {
-        std::cout << "[cheat]: Can't create config folder " << '\n';
+        std::cout << "[cheat]: Can't create config folder, try disabling your antivirus or adding a cheat to the exceptions " << '\n';
         return false;
     }
 }
 
 bool Config::downloadOffsetsFromGithub() {
-    // Ñîçäàåì êîìàíäó äëÿ âûçîâà PowerShell ñêðèïòà
+    // Ã‘Ã®Ã§Ã¤Ã Ã¥Ã¬ ÃªÃ®Ã¬Ã Ã­Ã¤Ã³ Ã¤Ã«Ã¿ Ã¢Ã»Ã§Ã®Ã¢Ã  PowerShell Ã±ÃªÃ°Ã¨Ã¯Ã²Ã 
     std::string urlOffsets = "https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/offsets.json";
     std::string commandOffsets = "Invoke-WebRequest -Uri \"" + urlOffsets + "\" -OutFile \"" + this->offsetsPath + "\\offsetsDump.json" + "\"";
 
