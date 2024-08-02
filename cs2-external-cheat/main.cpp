@@ -16,7 +16,7 @@ int main() {
         printf("[cheat]: Succesfly initialized configs\n");
     }
     else {
-        printf("[cheat]: Faile to initialize configs\n");
+        printf("[cheat]: Failed to initialize configs\n");
     }
 
     if (config.downloadOffsetsFromGithub()) {
