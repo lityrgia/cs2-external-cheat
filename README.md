@@ -24,3 +24,6 @@ It's only reading and using mouse_event to move mouse, also drawing with imgui.
 Open cs2, start game, then start cheat and wait till initialization. 
 Press Insert to open/close menu, End to close cheat. 
 Config files are in Documents/Vireless path.
+
+# 💾 Build
+Release x64
